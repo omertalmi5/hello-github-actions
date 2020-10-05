@@ -10,5 +10,5 @@ jobs:
           REGISTRY_URL: docker.pkg.github.com
           IMAGE_NAME: omer
         run: |
-            docker build -t "${{ IMAGE_NAME }}" .
-            docker run "${{ IMAGE_NAME }}"
+            docker build -t "${IMAGE_NAME}" .
+            docker run "${IMAGE_NAME}"
