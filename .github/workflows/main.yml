@@ -11,4 +11,5 @@ jobs:
       - env:
           REGISTRY_URL: docker.pkg.github.com
         run: |
-            docker build -t ${{ IMAGE_NAME }} .
+            docker build -t "${{ IMAGE_NAME }}" .
+            docker run "${{ IMAGE_NAME }}"
