@@ -7,6 +7,6 @@ jobs:
                 steps:
                         - uses: actions/checkout@v1
                         - env:
-                                FILE_PATH: docker.pkg.github.com
+                                FILE_PATH: action-a/Dockerfile
                         run:
                                 docker build -f ${{ FILE_PATH }} .
