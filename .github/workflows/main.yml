@@ -7,8 +7,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - env:
-          REGISTRY_URL: docker.pkg.github.com
-          IMAGE_NAME: omer
+          REGISTRY_URL: om
+          IMAGE_NAME: "${{ env.REGISTRY_URL }}er"
         run: |
             docker build -t "${IMAGE_NAME}" .
             docker run "${IMAGE_NAME}"
