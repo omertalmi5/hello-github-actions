@@ -7,6 +7,6 @@ jobs:
                 steps:
                         - uses: actions/checkout@v1
                         - env:
-                                FILE_PATH: action-a/Dockerfile
+                                IMAGE_NAME: omer
                         run:
-                                docker build -f ${{ FILE_PATH }} .
+                                docker build -t ${{ IMAGE_NAME }} .
